@@ -23,11 +23,11 @@ export class App extends Component {
       this.dataImg();
     }
   }
-  onClickMore() {
+  onClickMore = () => {
     this.setState(prevState => ({
       currentPage: prevState.currentPage + 1,
     }));
-  }
+  };
   dataImg = async () => {
     const { searchJmg, currentPage } = this.state;
     try {
